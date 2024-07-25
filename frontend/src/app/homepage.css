@@ -1,0 +1,125 @@
+.homepage{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-bg);
+    color: var(--main-txt);
+    padding: var(--fixed-m-p);
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.homepage .container{
+    height: 100%;
+    width: 80%;
+    border: 2px solid var(--light);
+    border-radius: var(--raduis);
+}
+
+.homepage .container .singup , 
+.homepage .container .login{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage .container .singup .txt , 
+.homepage .container .login .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    width: 50%;
+    height: 100%;
+}
+.homepage .container .login .txt{
+    order: 2;
+}
+
+.homepage .container .singup .txt p span , 
+.homepage .container .login .txt p span{
+    text-decoration:  underline;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--main-bg);
+}
+
+.homepage .container .singup form , 
+.homepage .container .login form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homepage .container .singup form .f-d , 
+.homepage .container .login form .f-d{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 3px;
+}
+
+.homepage .container .singup form .f-d input , 
+.homepage .container .login form .f-d input{
+    color: var(--sec-txt);
+    width: 280px;
+    padding: 1px 6px;
+    border-radius: var(--raduis);
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.homepage .container .singup form .f-d:nth-child(7){
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.homepage .container .singup form .f-d:nth-child(7) input{
+    width: fit-content;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.homepage .container .singup form .f-d:nth-child(7) label{
+    color: var(--light);
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.homepage .container .singup form .f-d input:focus , 
+.homepage .container .login form .f-d input:focus{
+    outline: none;
+    border-color: var(--light);
+    color: var(--light);
+}
+
+.action-btn{
+    border: 2px solid var(--light);
+    padding: 3px 20px;
+    border-radius: var(--raduis);
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+    margin-top: 5px;
+}
+
+.action-btn:focus{
+    outline: none;
+}
+
+.action-btn:hover{
+    background-color: var(--light);
+}
+
+
+
+
+.homepage .container .login{
+    display: none;
+}

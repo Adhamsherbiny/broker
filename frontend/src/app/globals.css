@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg:rgb(8, 23, 32) ;
+  --footer-c:rgb(12, 22, 54) ;
+  --light:royalblue;
+  --fixed-m-p:10px;
+  --raduis:6px;
+  --main-txt: white;
+  --sec-txt: black;
+  --thrd-txt: silver;
+  --transition: 0.7s;
+}
