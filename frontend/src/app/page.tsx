@@ -1,6 +1,7 @@
 'use client'
 import { useRef } from "react";
 import "./homepage.css";
+import Footer from "./footer";
 export default function Home() {
   const singup = useRef<any>()
   const login = useRef<any>()
@@ -74,6 +75,7 @@ export default function Home() {
           </form>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

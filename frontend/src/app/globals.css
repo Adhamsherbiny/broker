@@ -3,13 +3,106 @@
 @tailwind utilities;
 
 :root {
-  --main-bg:rgb(8, 23, 32) ;
-  --footer-c:rgb(12, 22, 54) ;
-  --light:royalblue;
-  --fixed-m-p:10px;
-  --raduis:6px;
+  --main-bg: rgb(8, 23, 32);
+  --footer-c: rgb(12, 22, 54);
+  --light: royalblue;
+  --fixed-m-p: 10px;
+  --raduis: 6px;
   --main-txt: white;
   --sec-txt: black;
-  --thrd-txt: silver;
+  --thrd-txt: rgb(177, 177, 177);
   --transition: 0.7s;
+}
+
+.footer {
+  padding: 20px 10px;
+  position: absolute;
+  bottom: -200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--footer-c);
+  color: var(--thrd-txt);
+  font-size: 10px;
+}
+
+.footer p:nth-child(1) {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: var(--main-txt);
+}
+
+.footer p:nth-child(3) {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--light);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer .logos {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .logos .icn {
+  font-size: 20px;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.facebook:hover {
+  border-radius: 6px;
+  color: blue;
+  background: white;
+}
+
+.messenger:hover {
+  border-radius: 6px;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 31, 117),
+    rgb(173, 65, 223),
+    rgb(65, 65, 223)
+  );
+}
+
+.twitter:hover {
+  border-radius: 6px;
+  color: rgb(0, 132, 255);
+  background-color: white;
+}
+
+.instgram:hover {
+  border-radius: 6px;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgb(253, 11, 104),
+    rgb(174, 0, 255),
+    rgb(255, 31, 61),
+    rgb(255, 102, 31)
+  );
+}
+
+.telegram:hover {
+  border-radius: 6px;
+  color: rgb(0, 119, 255);
+  background-color: white;
+}
+
+.phone:hover {
+  border-radius: 6px;
+  color: rebeccapurple;
+  background-color: white;
 }
