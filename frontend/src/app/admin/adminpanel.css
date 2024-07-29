@@ -1,6 +1,9 @@
 .admin-panel{
+    position: absolute;
     margin: 10px;
     width: 285px;
+    z-index: 10000;
+    top: 30px;
 }
 
 .menu-icn{
@@ -8,7 +11,7 @@
     width: 35px;
     color: var(--light);
     cursor: pointer;
-    padding: 3px 6px;
+    padding:2px;
     border: 1px solid var(--light);
     border-radius: var(--raduis);
     transition: var(--transition);
@@ -20,6 +23,7 @@
     background-color: var(--footer-c);
     border-radius: var(--raduis);
     display: none;
+    border: 1px solid var(--light);
 }
 .menu li{
     margin: 5px 0;

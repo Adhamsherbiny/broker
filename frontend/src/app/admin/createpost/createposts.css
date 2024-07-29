@@ -1,0 +1,68 @@
+.postDefinition{
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    padding-left: 60px;
+}
+
+.postDefinition form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.postDefinition form .pics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+
+.postDefinition form .pics .f-d{
+    display: flex;
+    margin: 5px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postDefinition form .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.postDefinition form .inputs .f-d input,
+.postDefinition form .inputs select{
+    color: var(--sec-txt);
+    padding: 2px 6px;
+    border-radius: var(--raduis);
+    font-size: 14px;
+    width: 220px;   
+}
+
+.postDefinition form .pics .f-d input{
+    color: var(--light);
+    max-width: 350px;
+}
+
+.postDefinition form .inputs .f-d{
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.action-post{
+    background-color: var(--light);
+    padding: 3px 15px;
+    border-radius: var(--raduis);
+    border: 2px solid var(--light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.action-post:hover{
+    background-color: transparent;
+}

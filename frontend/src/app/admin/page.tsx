@@ -1,7 +1,7 @@
 'use client'
 export default function admindashboard() {
     return (
-        <main>
+        <main className="admindashboard">
            Welcome in Admin Pages
         </main>
     )

@@ -1,0 +1,115 @@
+.post-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.post-layout .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-layout .container .post-model{
+    margin: 5px 0;
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--raduis);
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.096);
+    transition: var(--transition);
+}
+.post-layout .container .post-model:hover{
+    background-color: rgba(255, 255, 255, 0.2) ;
+}
+
+.post-layout .container .post-model .post-img{
+    width: 220px;
+    height: 100%;
+}
+
+.post-layout .container .post-model .post-img .img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--raduis);
+}
+
+.post-layout .container .post-model .txt-section{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.post-layout .container .post-model .txt-section .info{
+    font-size:13px;
+    max-width: 200px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.details .more-details{
+    display: flex;
+    align-items: center;
+}
+
+.price-info{
+    display: none;
+    color: orangered;
+    font-size: 14px;
+}
+
+.post-layout .container .post-model .txt-section .post-control input{
+    margin: 0 3px;
+    padding: 3px 10px;
+    border-radius: var(--raduis);
+    transition: var(--transition);
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.post-layout .container .post-model .txt-section .post-control input:nth-child(1){
+    background-color: green;
+    border-color: green;
+}
+.post-layout .container .post-model .txt-section .post-control input:nth-child(2){
+    background-color: orangered;
+    border-color: orangered;
+}
+.post-layout .container .post-model .txt-section .post-control input:nth-child(3){
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+}
+.post-layout .container .post-model .txt-section .post-control input:nth-child(4){
+    background-color: red;
+    border-color: red;
+}
+
+.post-layout .container .post-model .txt-section .post-control input:nth-child(1):hover{
+    background-color: white;
+    color: green;
+}
+.post-layout .container .post-model .txt-section .post-control input:nth-child(2):hover{
+    background-color: white;
+    color: orangered;
+}
+.post-layout .container .post-model .txt-section .post-control input:nth-child(3):hover{
+    background-color: white;
+    color: rebeccapurple;
+}
+.post-layout .container .post-model .txt-section .post-control input:nth-child(4):hover{
+    background-color: white;
+    color: red;
+}

@@ -19,12 +19,11 @@ export default function Menu() {
             <FontAwesomeIcon className="menu-icn" icon={faBars} onClick={menutoggle} />
             <ul className="menu" ref={menu}>
                 <li>
-                    <Link href={"#"} className="tab" >Add Appartment to Rent</Link>
+                    <Link href="/admin/createpost" className="tab" >Create Post</Link>
                 </li>
                 <li>
-                    <Link href={"#"} className="tab" >Add Appartment to Sell</Link>
+                    <Link href="/admin/posts" className="tab" >Show All Post</Link>
                 </li>
-
                 <li>
                     <Link href={"#"} className="tab" >Create Admin User</Link>
                 </li>
