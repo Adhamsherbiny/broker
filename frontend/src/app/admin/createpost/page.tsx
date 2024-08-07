@@ -8,12 +8,13 @@ export default function CreatePost() {
   const [price , setPrice] = useState<any>()
   const [phone , setPhone] = useState<any>()
   const [adress , setAdress] = useState<any>()
+  const [area , setArea] = useState<any>()
   const [rooms , setRooms] = useState<any>()
   const [bathrooms , setBathrooms] = useState<any>()
 
    function addpost (e: { preventDefault: () => void }){
     e.preventDefault()
-    axios.post("http://localhost:5000/createpost" , {pic , type , price , phone , adress , rooms , bathrooms})
+    axios.post("http://localhost:5000/createpost" , {pic , type , price , phone , adress , area ,  rooms , bathrooms})
     .then((response)=>(console.log(response.data)))
     .catch((err)=>(console.log(err)))
    }
@@ -45,6 +46,10 @@ export default function CreatePost() {
           <div className="f-d">
             <label htmlFor="">Adress</label>
             <input type="text" onChange={(e)=>{setAdress(e.target.value)}} />
+          </div>
+          <div className="f-d">
+            <label htmlFor="">Area</label>
+            <input type="text" onChange={(e)=>{setArea(e.target.value)}} />
           </div>
           <div className="f-d">
             <label htmlFor="">Rooms</label>
