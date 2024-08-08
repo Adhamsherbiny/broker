@@ -24,7 +24,7 @@ app.post("/createpost" , (req , res)=>{
     ]
     databaseConnet.query("INSERT INTO posts (pic, type, price, phone, adress, area ,rooms, bathrooms) VALUES (?)", [value] ,(err , result)=>{
         if (err) throw err
-        console.log("added item")
+        console.log("Added New Post")
         res.json({msg:"Added New Post"})
     })
 })
